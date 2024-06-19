@@ -1,0 +1,129 @@
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    color: aliceblue;
+    margin-bottom: 20px;
+}
+.attribution a { 
+    color: hsl(348, 58%, 47%);
+}
+
+body {
+    background-color: rgb(18, 32, 55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-width: 900px; 
+    width: 100%; 
+    padding: 0 20px; 
+    box-sizing: border-box; 
+}
+
+.card {
+    background-color: rgb(18, 32, 55);
+    box-shadow: -10px 10px 20px 1px rgb(42, 57, 94);
+    width: 100%;
+    max-width: 400px; 
+    border-radius: 20px;
+    margin-bottom: 20px; 
+}
+
+.card-img-top {
+    border-radius: 20px 20px 0 0; 
+    width: 100%; 
+    max-width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 20px; 
+}
+
+.card-title {
+    color: rgb(243, 236, 236);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: rgb(101, 130, 175);
+    font-weight: 600;
+    margin-bottom: 15px; 
+}
+
+.eth, .profile {
+    margin-top: 15px; 
+}
+
+.eth p, .profile p {
+    margin-bottom: 5px; 
+}
+
+.eth {
+    display: flex;
+    flex-direction: row; 
+justify-content: space-between;
+}
+
+.eth .price{
+    margin-bottom: 5px; 
+    color: aqua;
+}
+
+
+.eth .days {
+    margin-bottom: 5px; 
+   color: rgb(101, 130, 175);
+}
+
+.profile {
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-start;
+    align-items: center;
+    justify-content: space-around;
+    color: aliceblue;
+}
+
+.profile img {
+    height: 40px; 
+    width: auto; 
+    margin-right: 10px; 
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .card {
+        max-width: 100%; 
+    }
+
+    .card-body {
+        padding: 15px; 
+    }
+
+    .card-title {
+        font-size: 20px; 
+    }
+
+    .card-text {
+        font-size: 14px; 
+    }
+
+    .profile img {
+        height: 30px;
+    }
+}
